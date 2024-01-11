@@ -7,7 +7,7 @@ for t in range(0, 100):
     if t[0] > t[1] or t[0] == t[1]:
         continue
 
-    if t == 89:
+    if t == '89':
         print(t)
     else:
         print("{}, ".format(t), end="")
