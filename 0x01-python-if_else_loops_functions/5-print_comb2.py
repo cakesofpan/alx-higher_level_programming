@@ -3,6 +3,6 @@ for t in range(0, 100):
     if t < 10:
         t = '0' + str(t)
     if t != 99:
-        print(f"{t}, ", end="")
+        print("{}, ".format(t), end="")
     else:
         print(t)

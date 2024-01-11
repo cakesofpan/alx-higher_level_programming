@@ -10,4 +10,4 @@ for t in range(0, 100):
     if t == 89:
         print(t)
     else:
-        print(f"{t}, ", end="")
+        print("{}, ".format(t), end="")
