@@ -1,2 +1,2 @@
 #!/usr/bin/python3
-_ = open(__file__, 'w').write('#pythoniscool\n')
+exec("import builtins\nbuiltins.print('#pythoniscool')")
