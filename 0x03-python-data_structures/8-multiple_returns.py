@@ -1,6 +1,8 @@
 #!/usr/bin/python3
 def multiple_returns(sentence):
-    length = len(sentence)
-    first = sentence[0]
-    return(length)
-    return(first)
+    if not sentence:
+        return (0, none)
+    else:
+        first = sentence[0]
+        length = len(sentence)
+        return (length, first)

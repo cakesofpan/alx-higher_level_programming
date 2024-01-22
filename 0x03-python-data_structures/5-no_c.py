@@ -5,4 +5,4 @@ def no_c(my_string):
     for x in my_string:
         if x.lower() not in ['c'] or x.upper() not in ['C']:
             res += x
-    return(res)
+    return (res)

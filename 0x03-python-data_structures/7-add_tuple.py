@@ -5,8 +5,8 @@ def add_tuple(tuple_a=(), tuple_b=()):
     if len(tuple_b) < 2:
         tuple_b += (0,) * (2 - len(tuple_b))
 
-    a, b = tuple_a
-    c, d = tuple_b
+    a, b = tuple_a[:2]
+    c, d = tuple_b[:2]
 
     res = (a + c, b + d)
     return res
