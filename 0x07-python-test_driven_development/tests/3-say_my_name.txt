@@ -1,0 +1,17 @@
+import sys
+sys.path.append('../')
+
+say_my_name = __import__('3-say_my_name').say_my_name
+
+def say_my_name():
+	'''This is a method-level docstring that prints a string
+	>>> say_my_name("Chun", "Li")
+	My name is Chun Li
+	>>> say_my_name("Ada")
+	My name is Ada
+	'''
+	pass
+
+if __name__ == "__main__":
+	import doctest
+	doctest.testmod()

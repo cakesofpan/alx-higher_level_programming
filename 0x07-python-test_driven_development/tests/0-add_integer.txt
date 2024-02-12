@@ -1,0 +1,25 @@
+import sys
+sys.path.append('../')
+
+add_integer = __import__('0-add_integer').add_integer
+
+def test_add():
+	'''
+	>>> self.add_integer(2, 4)
+	6
+	>>> add_integer(-2, 5)
+	3
+	>>> add_integer(0, 0)
+	0
+	>>> add_integer(15, 1.3)
+	16
+	>>> add_integer(53, -4.6)
+	49
+	>>> add_integer(2.67, 4.7)
+	6
+	'''
+	pass
+
+if __name__ == "__main__":
+	import doctest
+	doctest.test_add()

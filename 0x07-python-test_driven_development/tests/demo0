@@ -1,0 +1,21 @@
+import unittest
+import sys
+sys.path.append("..")
+from 0-add_integer import add_integer
+
+Class Testadd(unittest.TestCase):
+	'''This is a class-level docstring
+	'''
+	def test_add_integer(self):
+		'''This is a method-level docstring for test_add_integer method
+                Tests whether the integers are added correctly
+                '''
+		a, b = 3, 5
+		self.assertEqual(add(a, b), a + b)
+		self.assertEqual(add(float(a), b), a + b)
+
+		with self.assertRaises(ValueError):
+                        add_integer("string", b)
+		
+if __name__ == '__main__':
+	unittest.main() 
