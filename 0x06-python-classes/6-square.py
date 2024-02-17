@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+'''This is a module level docstring for 6-square
+'''
+
+
 class Square:
     '''This is a class-level docstring
 

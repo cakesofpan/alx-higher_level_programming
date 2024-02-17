@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+'''This is a module level docstring for 4-square
+'''
+
+
 class Square:
     '''This is a class-level docstring
 
@@ -15,7 +19,7 @@ class Square:
 
     @property
     def size(self):
-        '''This is a method-level docstring for the size method. Retrieves data
+        '''This is a method-level docstring for the size method.Retrieves data
         '''
         return self.__size
 
