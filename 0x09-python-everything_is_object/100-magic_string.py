@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def magic_string():
-    for t in magic_string:
-        t = "BestSchool"**t
+    return "BestSchool" * (1 + magic_string.count)
+magic_string.count = 0
