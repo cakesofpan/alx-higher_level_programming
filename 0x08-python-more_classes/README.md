@@ -1,1 +1,1 @@
-This is a project on Python More Classes
+This is a project on Python More classes and objects
