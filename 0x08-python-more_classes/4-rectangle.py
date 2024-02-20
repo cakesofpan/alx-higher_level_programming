@@ -51,7 +51,7 @@ class Rectangle:
             raise ValueError("height must be >= 0")
 
     def area(self):
-        '''This is a method-level docstring that calculates area of rectangle'''
+        '''This a method-level docstring that calculates area of rectangle'''
         return self.__width * self.__height
 
     def perimeter(self):

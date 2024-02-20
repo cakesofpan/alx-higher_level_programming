@@ -8,9 +8,8 @@ class Rectangle:
             number_of_instances (int): The number of Rectangle instances.
             print_symbol (any): The symbol used for string representation.'''
     number_of_instances = 0
-    print_symbol = "#"
 
-    def __init__(self, width=0, height=0):
+    def __init__(self, width=0, height=0, print_symbol='#'):
         '''This is a method-level docstring for __init__
         Args:
         width: (int) width of a rectangle
@@ -19,6 +18,7 @@ class Rectangle:
         type(self).number_of_instances += 1
         self.width = width
         self.height = height
+        self.print_symbol = print_symbol
 
     @property
     def width(self):
@@ -79,7 +79,7 @@ class Rectangle:
 
         rect = []
         for t in range(self.__height):
-            [rect.append('#') for u in range(self.__width)]
+            [rect.append(self.print_symbol) for u in range(self.__width)]
             if t != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
