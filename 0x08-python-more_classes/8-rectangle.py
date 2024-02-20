@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''The module defines a rectangle'''
+
+
 class Rectangle:
     '''This is a class-level docstring for class rectangle
         Attributes:
@@ -32,7 +35,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-	 self.__width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -95,7 +98,7 @@ class Rectangle:
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
-  
+
     def __repr__(self):
         """Return the string representation of the Rectangle."""
         rect = "Rectangle(" + str(self.__width)

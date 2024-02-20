@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''The module defines a rectangle'''
+
+
 class Rectangle:
     '''This is a class-level docstring for class rectangle
         Attributes:
@@ -6,7 +9,6 @@ class Rectangle:
             print_symbol (any): The symbol used for string representation.'''
     number_of_instances = 0
     print_symbol = "#"
-
 
     def __init__(self, width=0, height=0):
         '''This is a method-level docstring for __init__
@@ -34,7 +36,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-	 self.__width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -81,7 +83,7 @@ class Rectangle:
             if t != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
-  
+
     def __repr__(self):
         """Return the string representation of the Rectangle."""
         rect = "Rectangle(" + str(self.__width)

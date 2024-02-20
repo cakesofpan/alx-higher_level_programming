@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''The module defines a rectangle'''
+
+
 class Rectangle:
     '''This is a class-level docstring for class rectangle
     '''
@@ -27,7 +30,7 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-	 self.__width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -46,10 +49,9 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-    
+
     def area(self):
-     '''This is a method-level docstring that calculates area of a rectangle
-        '''
+        '''This is a method-level docstring that calculates area of rectangle'''
         return self.__width * self.__height
 
     def perimeter(self):

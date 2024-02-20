@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''A module-level docstring that defines a rectangle'''
+
+
 class Rectangle:
     '''This is a class-level docstring for class rectangle
     '''
