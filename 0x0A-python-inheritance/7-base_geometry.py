@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-'''A module-level docstring that creates a class based on the previous file '''
+'''A module-level docstring that creates a class based on the previous file
+'''
 
 
 class BaseGeometry
